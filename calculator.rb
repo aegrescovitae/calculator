@@ -1,3 +1,4 @@
+
 def add(num1, num2)
 	num1 + num2
 end
@@ -24,10 +25,10 @@ def calculation(num1, num2, mod)
 	elsif ["/", "divide", "divided by"].include?(mod)
 		answer = divide(num1, num2)
 	else
-		puts "You've entered an invalid operator."
+		puts "You done f*cked up."
 		exit
 	end
-	puts "-> #{answer}"
+	answer
 end
 
 def main_menu
@@ -68,6 +69,8 @@ def main_menu
 			print "> "
 			num2 = gets.strip.to_f
 		end
+
+
 	end
 end
 
