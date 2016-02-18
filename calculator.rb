@@ -41,6 +41,10 @@ def main_menu
 				puts "HEY () HERE"
 			else
 				puts "FAIL: #{num1}"
+
+		num1 = gets.strip.to_f
+			if ['(',')'].include?(num1)
+				puts "HEY () HERE"
 			end
 
 		puts ""
