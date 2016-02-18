@@ -1,17 +1,17 @@
 def add(num1, num2)
-	num1.to_f + num2.to_f
+	num1 + num2
 end
 
 def sub(num1, num2)
-	num1.to_f - num2.to_f
+	num1 - num2
 end
 
 def mult(num1, num2)
-	num1.to_f * num2.to_f
+	num1 * num2
 end
 
 def divide(num1, num2)
-	num1.to_f / num2.to_f
+	num1 / num2
 end
 
 def calculation(num1, num2, mod)
@@ -36,16 +36,7 @@ def main_menu
 		puts "-- Calculator --"
 		puts "Enter First Number"
 		print "> "
-		num1 = gets.strip.split('')
-			if ["(", ")"].include?(num1)
-				puts "HEY () HERE"
-			else
-				puts "FAIL: #{num1}"
-
 		num1 = gets.strip.to_f
-			if ['(',')'].include?(num1)
-				puts "HEY () HERE"
-			end
 
 		puts ""
 		puts "Enter Operator (c: clear, e: exit)"
@@ -75,7 +66,7 @@ def main_menu
 			puts ""
 			puts "Enter Second Number"
 			print "> "
-			num2 = gets.strip
+			num2 = gets.strip.to_f
 		end
 	end
 end
