@@ -37,6 +37,9 @@ def main_menu
 		puts "Enter First Number"
 		print "> "
 		num1 = gets.strip.to_f
+			if ['(',')'].include?(num1)
+				puts "HEY () HERE"
+			end
 
 		puts ""
 		puts "Enter Operator (c: clear, e: exit)"
